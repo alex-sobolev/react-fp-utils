@@ -6,7 +6,7 @@ module.exports = {
   entry: path.join(__dirname, '../src/index.js'),
 
   resolve: {
-    extensions: ['.js', 'jsx', '.css', '.scss'],
+    extensions: ['.js', '.jsx', '.css', '.scss'],
     mainFields: ['module', 'main']
   },
 
