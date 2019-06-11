@@ -25,7 +25,7 @@ module.exports = merge(common, {
       new TerserPlugin({
         cache: false,
         parallel: false,
-        sourceMap: true // JS source maps
+        sourceMap: false // JS source maps
       }),
       new OptimizeCSSAssetsPlugin({})
     ]

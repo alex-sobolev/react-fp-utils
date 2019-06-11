@@ -25,8 +25,7 @@
   },
   "homepage": "https://github.com/alex-sobolev/react-fp-utils#readme",
   "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react": "^16.8.6"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",

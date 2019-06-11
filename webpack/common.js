@@ -1,5 +1,4 @@
 const path = require('path');
-const webpack = require('webpack');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -52,7 +51,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.join(__dirname, '../src/index.html')
     }),
-    new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/)
   ],
 
   output: {

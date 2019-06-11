@@ -1,5 +1,6 @@
-import React from 'react';
-import { render } from 'react-dom';
-import { App } from './components/App';
+import * as list from './list';
+import * as object from './object';
+import * as string from './string';
+import * as reactUtils from './reactUtils';
 
-render(<App />, document.querySelector('#app'));
+export { list, object, string, reactUtils };
