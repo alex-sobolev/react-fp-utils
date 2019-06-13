@@ -10,6 +10,8 @@ module.exports = {
     mainFields: ['module', 'main']
   },
 
+  target: 'node',
+
   module: {
     rules: [
       {
@@ -50,12 +52,15 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, '../src/index.html')
-    }),
+    })
   ],
 
   output: {
     path: path.join(__dirname, '../dist'),
-    filename: 'bundle.js',
-    publicPath: '/'
+    filename: 'fpUtils.js',
+    publicPath: '/',
+    library: 'fpUtils',
+    libraryTarget: 'umd',
+    umdNamedDefine: true
   }
 };
